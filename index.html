@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <title>Newsletter sing-up</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="about">
+        <h1>Stay update!</h1>
+        <p class="text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul>
+          <li>
+            <img src="./src/images/icon-list.svg" alt="" />
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li>
+            <img src="./src/images/icon-list.svg" alt="" />
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li>
+            <img src="./src/images/icon-list.svg" alt="" />
+            <p>And much more!</p>
+          </li>
+        </ul>
+
+        <form class="form" action="./index.html" method="get">
+          <label for="email">Email adress</label>
+          <label class="label-error" for="error">Valid email required</label>
+          <input
+            class="email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+          />
+          <input
+            class="btn-subscribe"
+            type="submit"
+            value="Subscribe to monthly newsletter"
+          />
+        </form>
+      </section>
+
+      <section class="rigth-image">
+        <img src="./src/images/illustration-sign-up-desktop.svg" alt="" />
+      </section>
+    </main>
+    <section class="thanks">
+      <img src="./src/images/icon-success.svg" alt="" />
+      <h2>Thanks for subscribing!</h2>
+      <p>
+        A confirmation email has been sent to ash@loremcompany.com. Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+      <button>Dismiss message</button>
+    </section>
+  </body>
+</html>

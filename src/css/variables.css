@@ -1,0 +1,10 @@
+:root{
+--error: hsl(4, 100%, 67%);
+--pink-error:#fd568b;
+--input-error:hsla(4, 100%, 75%, 0.39);
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+
+}

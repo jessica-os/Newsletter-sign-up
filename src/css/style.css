@@ -116,16 +116,16 @@ body{
     background: linear-gradient(to right, var(--pink-error), var(--error) );
 }
 
-.form .label-error{
-    color: var(--error);
+ .form .label-error{
+    color:var(--error);
     position: absolute;
     right: 0;
     display: none;
 }
-.form .email.error{
+ .email.error{
     border: 1px solid var(--error);
     background-color: var(--input-error);
 }
-.form .email.error::placeholder{
+ .email.error::placeholder{
     color: var(--error);
 }

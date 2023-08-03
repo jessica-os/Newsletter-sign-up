@@ -16,6 +16,7 @@ body {
   border-radius: 20px;
   align-items: center;
 }
+
 .container .about {
   padding: 60px;
   max-width: 500px;
@@ -74,8 +75,11 @@ body {
 .form .btn-subscribe:hover {
   background: linear-gradient(to right, var(--pink-error), var(--error));
 }
-.rigth-image img {
+.desktop-image {
   width: 280px;
+}
+.mobile-image{
+display: none;
 }
 .thanks {
   background-color: var(--White);
@@ -111,10 +115,14 @@ body {
 }
 
 .form .label-error {
+  visibility: hidden;
+  position: absolute;
+}
+.form .label-error-visible {
   color: var(--error);
   position: absolute;
   right: 0;
-  display: none;
+  visibility: visible;
 }
 
 .email.error {
@@ -123,4 +131,10 @@ body {
 }
 .email.error::placeholder {
   color: var(--error);
+}
+.container-hidden {
+  display: none;
+}
+.thanks-visible {
+  display: block;
 }

@@ -15,19 +15,13 @@ function validEmail() {
 
   const emailPattern = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
 
-  if (!emailPattern.test(email)) {
-    labelError.style.display = "block";
+  if (!emailPattern.test(email) || inputEmail === "") {
+    labelError.classList.add("label-error-visible");
     inputEmail.classList.add("error");
   } else {
-    labelError.style.display = "block";
+    labelError.classList.remove("label-error-visible");
     inputEmail.classList.remove("error");
-
-    if (inputEmail.value) {
-      container.style.display = "none";
-      thanks.style.display = "block";
-    } else {
-      inputEmail.classList.add("error");
-      labelError.style.display = "block";
-    }
+    container.classList.add("container-hidden");
+    thanks.classList.add("thanks-visible");
   }
 }

@@ -1,0 +1,70 @@
+@media (max-width: 800px) {
+  .container {
+    width: 700px;
+    gap: 30px;
+    padding: 20px;
+    height: 80vh;
+  }
+  .container .about {
+    padding: 0;
+    max-width: 500px;
+  }
+  .container-hidden {
+    display: none;
+  }
+  .rigth-image {
+    width: 250px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    width: 600px;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+  .container .about .text {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 19px;
+  }
+  .about ul li {
+    font-size: 14px;
+  }
+  .about ul li img {
+    margin-right: 10px;
+    width: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+  }
+  body {
+    background-color: var(--White);
+  }
+  .container {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 10px;
+  }
+  .container .about {
+    padding: 30px;
+    max-width: 500px;
+  }
+  .container h1 {
+    margin-bottom: 20px;
+  }
+  .container .about .text {
+    margin-bottom: 30px;
+  }
+  .about ul li {
+    margin-bottom: 15px;
+  }
+  .form .email {
+    margin-bottom: 40px;
+  }
+}

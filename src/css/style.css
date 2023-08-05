@@ -78,8 +78,8 @@ body {
 .desktop-image {
   width: 280px;
 }
-.mobile-image{
-display: none;
+.mobile-image {
+  display: none;
 }
 .thanks {
   background-color: var(--White);
@@ -124,7 +124,6 @@ display: none;
   right: 0;
   visibility: visible;
 }
-
 .email.error {
   border: 1px solid var(--error);
   background-color: var(--input-error);

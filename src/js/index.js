@@ -1,6 +1,5 @@
 const container = document.querySelector(".container");
 const inputEmail = document.getElementById("email");
-
 const btnSubscribe = document.querySelector(".btn-subscribe");
 const thanks = document.querySelector(".thanks");
 const labelError = document.querySelector(".label-error");
@@ -12,7 +11,6 @@ btnSubscribe.addEventListener("click", (e) => {
 
 function validEmail() {
   const email = inputEmail.value.trim();
-
   const emailPattern = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
 
   if (!emailPattern.test(email) || inputEmail === "") {

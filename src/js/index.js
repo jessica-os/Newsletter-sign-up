@@ -3,6 +3,7 @@ const inputEmail = document.getElementById("email");
 const btnSubscribe = document.querySelector(".btn-subscribe");
 const thanks = document.querySelector(".thanks");
 const labelError = document.querySelector(".label-error");
+const msg = document.querySelector(".msg");
 
 btnSubscribe.addEventListener("click", (e) => {
   e.preventDefault();
@@ -21,5 +22,6 @@ function validEmail() {
     inputEmail.classList.remove("error");
     container.classList.add("container-hidden");
     thanks.classList.add("thanks-visible");
+    msg.innerText = `A confirmation email has been sent to ${email}. Please openit and click the button inside to confirm your subscription.`;
   }
 }
